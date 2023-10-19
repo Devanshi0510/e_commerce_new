@@ -1,0 +1,377 @@
+/* #livocitrezin 
+vitamin c*/
+
+body,html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+.product-card {
+  margin-bottom: 20px;
+}
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgb(200, 195, 195);
+    border-radius: .25rem;
+    box-shadow: 10px 10px 5px rgb(225, 228, 228);
+}
+
+.card:hover {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+/* Set a fixed height for the card-body */
+.card-body {
+  height: 170px; /* Adjust the height as needed */
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(200, 195, 195);
+}
+.card-img-top {
+  height: 437px;
+  padding: 81px;
+}
+.card-title {
+  margin-bottom: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.first_page_image {
+  width: 82.1%;
+  height: 32rem;
+  margin-left: 7.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.bg-dark {
+  height: 5rem;
+}
+
+.img_text {
+  position: absolute;
+  margin-top: 17rem;
+  margin-left: 27rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: serif;
+  font-size: 4rem;
+}
+.img_text2 {
+  position: absolute;
+  margin-top: 15rem;
+  margin-left: 37rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.three_img {
+  display: flex;
+  margin-left: 27 rem;
+  justify-content: center;
+  gap: 36px;
+}
+
+.first_page_2image {
+  width: 25.5%;
+  height: 14rem;
+  /* margin-left: 7.5rem; */
+  margin-top: 2rem;
+}
+.img1_text {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: -47rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+
+.img2_text {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+.img3_text {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 48rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+
+.img3_text:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  .img2_text:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  .img1_text:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+.explore_text {
+  width: 81.8%;
+  border: 2px solid black;
+  margin-left: 7.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  background-color: black;
+}
+.explore_text:hover {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  
+  .last{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image:url(img_foot.png);
+    /* height: 50vh; */
+    padding-left: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 20vh;
+    gap: 10vw;
+    margin-top: 5rem;
+    height: 15rem;
+}
+.last1{
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+}
+.last2{
+    display: flex;
+    /* gap:1vw; */
+    justify-content: center;
+    gap: 5vw;
+    padding-left: 50vw;
+    margin-top: 7rem;
+    height: 4vw;
+}
+.last h4{
+    font-size:smaller;
+    font-family: lato;
+    font-weight: 400;
+    margin:5px;
+    color:rgb(24,32,74) ;
+
+}
+
+
+
+.img1_cat {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: -53rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+.img2_cat {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: -17rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+.img3_cat {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 18rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+.img4_cat {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 54rem;
+  text-align: center;
+  color: rgb(254, 254, 254);
+  font-style: oblique;
+  font-family: initial;
+  font-size: 2rem;
+}
+
+.categories {
+  display: flex;
+  margin-left: 27 rem;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.first_page_cat_image {
+  width: 15.5rem;
+  height: 10rem;
+  /* margin-left: 7.5rem; */
+  margin-top: 2rem;
+}
+.men_heading{
+  width: 81.8%;
+  border: 2px solid black;
+  margin-left: 7.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-family: initial;
+  background-color: rgb(255, 255, 255);
+}
+#men-s-clothing-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.women_heading{
+  width: 81.8%;
+  border: 2px solid black;
+  margin-left: 7.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-family: initial;
+  background-color: rgb(255, 255, 255);
+}
+#women-s-clothing-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+gap: 2rem;
+}
+.jewelery_heading{
+  width: 81.8%;
+  border: 2px solid black;
+  margin-left: 7.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-family: initial;
+  background-color: rgb(255, 255, 255);
+}
+#jewelery-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.electronics_heading{
+  width: 81.8%;
+  border: 2px solid black;
+  margin-left: 7.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-family: initial;
+  background-color: rgb(255, 255, 255);
+}
+#electronics-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.categ{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card-title {
+  margin-bottom: .75rem;
+  font-size: smaller;
+  font-weight: 600;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  height: 23rem;
+}
+.filter_by{
+  margin-left: 9rem;
+ 
+}
+.sort_by{
+  margin-right: 9rem;
+}
+.sort_filter{
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 3rem;
+}

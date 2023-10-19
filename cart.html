@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">E-Mart</a>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="wishlist.html">Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div id="cart-summary">
+    <div class="cart-heading">
+      <h3>Cart Summary</h3>
+    </div>
+    
+    <div id="cart-items-container">
+    
+  </div>
+    <div class="cart-item">
+      <p>Total Cost: <span id="total-cost"></span></p>
+    </div>
+    <button id="rzp-button1" 
+    style="float: right;
+    margin-right: -5.5rem;
+    margin-top: 5rem;
+    font-family: auto;
+    font-size: large;">Checkout</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="cart.js"></script>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+
+var options = {
+
+   
+
+    "key": "rzp_test_ULvr6SpsDPrUSq", // Enter the Key ID generated from the Dashboard
+
+    "amount": "5000000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+
+    "currency": "INR",
+
+    "name": "Acme Corp", //your business name
+
+    "description": "Test Transaction",
+
+    "image": "https://example.com/your_logo",
+
+    "order_id": "", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+
+    "handler": function (response){
+
+        alert(response.razorpay_payment_id);
+
+        alert(response.razorpay_order_id);
+
+        alert(response.razorpay_signature)
+
+    },
+
+    "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
+
+        "name": "Gaurav Kumar", //your customer's name
+
+        "email": "gaurav.kumar@example.com",
+
+        "contact": "9000090000"  //Provide the customer's phone number for better conversion rates
+
+    },
+
+    "notes": {
+
+        "address": "Razorpay Corporate Office"
+
+    },
+
+    "theme": {
+
+        "color": "#3399cc"
+
+    }
+
+};
+
+var rzp1 = new Razorpay(options);
+
+rzp1.on('payment.failed', function (response){
+
+        alert(response.error.code);
+
+        alert(response.error.description);
+
+        alert(response.error.source);
+
+        alert(response.error.step);
+
+        alert(response.error.reason);
+
+        alert(response.error.metadata.order_id);
+
+        alert(response.error.metadata.payment_id);
+
+});
+
+document.getElementById('rzp-button1').onclick = function(e){
+
+    rzp1.open();
+
+    e.preventDefault();
+
+}
+</script>
+</body>
+</html>

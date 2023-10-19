@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Your E-Commerce Store</title>
+<link rel="stylesheet" href="index.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">E-Mart</a>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="wishlist.html">Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ <h1 class="img_text">The Latest trends in<br>fashion</h1>
+ <p class="img_text2">Get unlimited Deals</p>
+  <img src="shopp.jpg" class="first_page_image">
+ <div class="three_img">
+  <h4 class="img1_text">Latest Trends on<br>your Fingertips</h4>
+  <img src="img1.jfif" class="first_page_2image">
+  <h4 class="img2_text">Highest Quality<br>Collection</h4>
+  <img src="img2.jfif" class="first_page_2image">
+  <h4 class="img3_text">Your Look<br>Our Expertise</h4>
+  <img src="img3.jfif" class="first_page_2image">
+
+ </div>
+ <h4 class="explore_text">Categories</h4>
+ <div class="categories">
+  <h4 class="img1_cat">Women</h4>
+  <a href="#women-s-clothing-container"> <img src="img_cat1.jfif" class="first_page_cat_image"/></a>
+ 
+  <h4 class="img2_cat">Men</h4>
+  <a href="#men-s-clothing-container"> <img src="img_cat2.jpg" class="first_page_cat_image"></a>
+ 
+  <h4 class="img3_cat">Accessories</h4>
+  <a href="#jewelery-container"><img src="img_cat3.jpg" class="first_page_cat_image"></a>
+  
+  <h4 class="img4_cat">Electronics</h4>
+  <a href="#electronics-container"><img src="img_cat4.jpg" class="first_page_cat_image"></a>
+  
+
+ </div>
+ <h4 class="explore_text">Explore Our Latest Collection</h4>
+ <div class="sort_filter"> <div class="filter_by">
+  <label for="filter-by">Filter By: </label>
+   <select id="filter-by">
+  <option value="none">None</option>
+  <option value="rating>3">Rating>3</option>
+  <option value="rating>4">Rating>4</option>
+  <option value="count>0">Available</option>
+</select>
+</div>
+ <div class="sort_by"> <label for="sort-by">Sort By: </label>
+  <select id="sort-by">
+  <option value="none">None</option>
+  <option value="price-high">Price High to Low</option>
+  <option value="price-low">Price Low to High</option>
+  <option value="rating-high">Rating High to Low</option>
+  <option value="rating-low">Rating Low to High</option>
+</select></div></div>
+
+
+
+  <!-- Product Display Section -->
+  <div class="container mt-4">
+    <div id="product-container">
+      <!-- Product cards will be dynamically added here -->
+    <div class="categ">
+    <h1 class="women_heading">Women's Clothing</h1>
+    <div id="women-s-clothing-container"></div>
+
+    <h1 class="men_heading">Men's Clothing</h1>
+    <div id="men-s-clothing-container"></div>
+    
+    <h1 class="jewelery_heading">Jewelery</h1>
+    <div id="jewelery-container"></div>
+    
+    <h1 class="electronics_heading">Electronics</h1>
+    <div id="electronics-container"></div>
+    
+    
+  </div>
+    </div>
+  </div>
+
+  
+
+
+  <nav class="last">
+    <section class="last2">
+        <section class="last1">
+        <h4 style="font-weight:bold;"  >Social</h4>
+        <h4>Facebook</h4>
+        <h4>Instagram</h4>
+        <h4>Linkedln</h4></section>
+        
+        <section class="last1">
+            <h4>Get Help</h4>
+        <h4>Partner with us</h4>
+        <h4>Add your Brand</h4>
+        <h4>Sign up to deliver </h4></section>
+        <section class="last1">
+            <h4>Read our blog</h4>
+            <h4>Buy gift card</h4>
+            <h4>Shop nearby</h4>
+            <h4>Save on first order</h4>
+        </section>  
+    </section>
+    
+    </nav>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+  <!-- Fetch and display products using JavaScript -->
+  
+
+</body>
+</html>
